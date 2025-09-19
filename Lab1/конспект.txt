@@ -1,0 +1,103 @@
+Конспект по Git
+
+
+Что такое Git?
+
+Git — это система контроля версий.
+Позволяет отслеживать все изменения в коде и работать с разными версиями проекта одновременно.
+
+
+Git помогает:
+
+Вернуться к прошлым версиям.
+Узнать, кто и когда вносил изменения.
+Отменять нежелательные изменения.
+
+
+Использование Git
+
+Git работает через командную строку.
+Многие редакторы кода имеют графический Git-клиент, но знание командной строки полезно:
+Лучше понимаете, как работает Git.
+Можно использовать Git на любом компьютере.
+Можно работать на удалённом сервере без графического интерфейса.
+
+
+Настройка Git
+
+Установка имени и email:
+git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"
+
+
+Установка имени основной ветки:
+git config --global init.defaultBranch main
+
+
+Настройка корректной обработки окончаний строк:
+
+Unix/Mac:
+git config --global core.autocrlf input
+git config --global core.safecrlf warn
+
+Windows:
+git config --global core.autocrlf true
+git config --global core.safecrlf warn
+
+Создание нового репозитория
+
+Создание папки и файла:
+mkdir work
+cd work
+touch hello.html
+
+Инициализация Git-репозитория:
+git init
+
+Добавление файла и первый коммит:
+git add hello.html
+git commit -m "Initial Commit"
+
+Проверка состояния репозитория
+git status
+
+
+Индексация изменений
+
+Подготовка изменений к коммиту:
+git add hello.html
+git status
+
+Коммит изменений
+Сохранение изменений в репозитории:
+git commit -m "Added standard HTML page tags"
+
+Просмотр истории
+git log
+git log --oneline
+git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
+
+Возврат к прошлым версиям
+git checkout <hash>
+git switch main
+
+Работа с тегами
+git tag v1
+git tag v1-beta
+git checkout v1
+git checkout v1-beta
+git tag
+
+Отмена изменений
+
+Индексация не сделана (unstaged):
+git restore hello.html
+
+Изменения в индексе (staged):
+git restore --staged hello.html
+git restore hello.html
+
+Основные идеи
+Git работает с изменениями в файлах, а не с самими файлами.
+Каждое изменение можно индексировать и коммитить для сохранения истории.
+Владение Git позволяет работать на любом компьютере и сервере, даже без графического интерфейса.
