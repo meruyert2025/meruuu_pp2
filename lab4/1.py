@@ -70,12 +70,14 @@ print(yesterday)
 '''
 #9
 '''
+
 from datetime import datetime
 now=datetime.now()
 m=now.replace(microsecond=0)
 print(m)
 print(now)
 '''
+
 #10
 '''
 from datetime import datetime,timedelta

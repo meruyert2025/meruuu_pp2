@@ -1,4 +1,3 @@
-
 import pygame, sys, glob, os
 
 pygame.init()

@@ -1,0 +1,3 @@
+Apython -u "/Users/meruert/Desktop/python/meruuu_pp2/lab6/14.py"
+python -u "/Users/meruert/Desktop/python/meruuu_pp2/lab6/14.py"
+gi
