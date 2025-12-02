@@ -123,7 +123,7 @@ def main():
                 dx = current_pos[0] - start_pos[0]
                 dy = current_pos[1] - start_pos[1]
                 radius_c = int(math.hypot(dx, dy))
-                pygame.draw.circle(screen, preview_color, start_pos, radius_c, shape_thickness)
+                pygame.draw.circle(screen, preview_color, start_pos, radius_c,shape_thickness ) 
         
         pygame.display.flip()
         clock.tick(60)
@@ -133,4 +133,4 @@ def draw_lines(screen, points, width, color):
     for i in range(len(points)-1):
         pygame.draw.line(screen, color, points[i], points[i+1], width)
 
-main()
+main() 

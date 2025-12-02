@@ -15,7 +15,7 @@ RED = (220, 20, 60)
 
 
 RADIUS = 25
-STEP = 20  
+STEP = 25
 
 
 x, y = WIDTH // 2, HEIGHT // 2

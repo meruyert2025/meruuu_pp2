@@ -44,7 +44,7 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
         self.image = pygame.image.load("/Users/meruert/Downloads/PygameTutorial_3_0/Player.png")
         self.rect = self.image.get_rect()
-        self.rect.center = (160, 520)
+        self.rect.center = (160,520)
     
     def move(self):
         pressed_keys = pygame.key.get_pressed()

@@ -1,4 +1,3 @@
-
 import pygame
 import datetime
 
@@ -8,12 +7,12 @@ W, H = 800, 800
 center_x = W // 2  
 center_y = H // 2  
 WHITE = (255, 255, 255)             
-sc = pygame.display.set_mode((W, H))
+sc = pygame.display.set_mode((W, H)) # создаём окно заданного размера и получаем поверхность для рисования
 
 mickey = pygame.image.load("/Users/meruert/Desktop/base_micky.jpg")
 secondHand = pygame.image.load("/Users/meruert/Downloads/second.png")
 minuteHand = pygame.image.load("/Users/meruert/Downloads/minute.png")
-mickeyRect = mickey.get_rect()
+mickeyRect = mickey.get_rect() # получаем прямоугольник (размер/позиция) для mickey
 
 
 def rotate_and_blit(surface, image, center_point, rotation_angle):

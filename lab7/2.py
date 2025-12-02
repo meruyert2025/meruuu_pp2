@@ -58,7 +58,8 @@ while running:
                 else:
                     load_play(idx)          
             elif e.key == pygame.K_s:       
-                pygame.mixer.music.stop(); paused = False
+                pygame.mixer.music.stop()
+                paused = False
             elif e.key in (pygame.K_RIGHT, pygame.K_n):   
                 load_play(idx + 1)
             elif e.key in (pygame.K_LEFT, pygame.K_p):    

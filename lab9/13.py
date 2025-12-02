@@ -190,4 +190,3 @@ def new_func(main):
     main()
 
 new_func(main)  # Ойынның негізгі циклін бастау
-
